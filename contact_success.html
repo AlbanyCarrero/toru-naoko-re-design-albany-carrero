@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/e16411afed.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts - Nunito Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Own styles -->
+    <link rel="stylesheet" href="css/styles.css">
+     
+</head>
+
+<body>
+
+    <header class="header container-fluid" id="header-a">
+    
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo-toru&naoko-light.png" alt="">
+                </a>
+        
+                <!-- Toggle btn -->
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- End Toggle btn -->
+        
+                <div class="sidebar offcanvas offcanvas-start sidebar-solid" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/logo-toru&naoko-light.png" alt="">
+                        </a>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+            
+                    <div class="offcanvas-body d-flex flex-column flex-lg-row p-2 p-lg-0">
+                        <ul class="navbar-nav justify-content-center align-items-center fs-6 flex-grow-1">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="shop.php">Productos</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="index.html#contact">Contacto</a>
+                            </li>
+                        </ul>
+            
+                        <div class="d-flex justify-content-center align-items-center gap-3">
+                            <ul class="nav-socials flex-row navbar-nav justify-content-center flex-grow-1 pe-3">
+                                <li class="nav-item mx-2"><a href="" target=""><i class="fa-solid fa-heart"></i></a></li>
+                                <li class="nav-item mx-2"><a href="" target=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+                                <li class="nav-item mx-2"><a href="login.html" target=""><i class="fa-solid fa-user"></i></a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+    
+        </nav>
+
+        <div class="" id="hero-a">
+            <div id="hero-home" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                <div class="carousel-indicators d-none">
+                    <button type="button" data-bs-target="#hero-home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#hero-home" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#hero-home" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+      
+                <div class="carousel-inner">
+                  <div class="carousel-item active c-item">
+                    <video src="video/retro-1.mp4" autoplay="true" muted="true" loop="true" class="w-100 c-img"></video>
+                    <div class="carousel-caption d-flex h-100 align-items-center justify-content-center flex-column">
+                        <h5 class="mt-5">Nuevo Lanzamiento</h5>
+                        <h1 class="mt-3" id="retro">Retro Rendezvous</h1>
+                        <a href="#" class="btn btn-dark mt-5">Ver productos</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item c-item">
+                    <video src="video/basic-2.mp4" autoplay="true" muted="true" loop="true" class="w-100 c-img"></video>
+                    <div class="carousel-caption d-flex h-100 align-items-center justify-content-center flex-column">
+                        <h5 class="mt-5">Colección</h5>
+                        <h1 class="mt-3" id="basic">New Basics</h1>
+                        <a href="" target="_blank" class="btn btn-dark mt-4">Ver colección</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item c-item">
+                    <video src="video/after-1.mp4" autoplay="true" muted="true" loop="true" class="w-100 c-img"></video>
+                    <div class="carousel-caption d-flex h-100 align-items-center justify-content-center flex-column">
+                        <h5 class="mt-5">Colección</h5>
+                        <h1 class="mt-3">After Dark</h1>
+                        <a href="" target="_blank" class="btn btn-dark mt-4">Ver colección</a>
+                    </div>
+                  </div>
+                </div>
+      
+                <button class="carousel-control-prev" type="button" data-bs-target="#hero-home" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#hero-home" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                
+              </div>
+      
+            </div>
+    
+    </header>
+    
+    <section class="container" id="categories-a">
+
+        <div class="container mt-5 py-3 px-5" id="text-area-a">
+            <div class="title-a">
+                <h2>Categorías</h2>
+            </div>
+        </div>
+           
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card card-categories ">
+                        <img src="img/bra.png" class="card-img categories-img" alt="...">
+                        <div class="card-img-overlay text-bg-dark bg-opacity-25 d-flex justify-content-center align-items-center">
+                          <h4 class="card-title text-center">Sostenes</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card card-categories ">
+                        <img src="img/pantie.png" class="card-img categories-img" alt="...">
+                        <div class="card-img-overlay text-bg-dark bg-opacity-25 d-flex justify-content-center align-items-center">
+                          <h4 class="card-title text-center">Panties</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card card-categories ">
+                        <img src="img/body.png" class="card-img categories-img" alt="...">
+                        <div class="card-img-overlay text-bg-dark bg-opacity-25 d-flex justify-content-center align-items-center">
+                          <h4 class="card-title text-center">Tops</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card card-categories ">
+                        <img src="img/dress.jpg" class="card-img categories-img" alt="...">
+                        <div class="card-img-overlay text-bg-dark bg-opacity-25 d-flex justify-content-center align-items-center">
+                          <h4 class="card-title text-center">Vestidos</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card card-categories ">
+                        <img src="img/pijama.jpg" class="card-img categories-img" alt="...">
+                        <div class="card-img-overlay text-bg-dark bg-opacity-25 d-flex justify-content-center align-items-center">
+                          <h4 class="card-title text-center">Piajamas</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card card-categories ">
+                        <img src="img/swim.jpg" class="card-img categories-img" alt="...">
+                        <div class="card-img-overlay text-bg-dark bg-opacity-25 d-flex justify-content-center align-items-center">
+                          <h4 class="card-title text-center">Swimwear</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container" id="news-a">
+
+        <div class="container mt-5 py-3 px-5" id="text-area-a">
+            <div class="title-a">
+                <h2>Nuevos Lanzamientos</h2>
+            </div>
+            <div class="subtitle-a mt-1">
+                <h4>Retro Rendezvous</h4>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+
+         <div class="row">
+
+            <div class="swiper mySwiper1">
+
+                <div class="swiper-wrapper">
+
+                    <div class="card swiper-slide">
+                        <img src="img/rr-april-biker-1.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between p-0">
+                            <span class="badge text-bg-dark rounded-0">Pre-Order</span>
+                            <div class="card-content px-4 py-3">
+                                <a href="" class="card-icon" ><i class="fa-regular fa-heart"></i></a>
+                                
+                                <div>
+                                    <span class="card-text card-product-name">April biker shorts</span>
+                                    <span class="card-text card-text-tag">$50.000 CLP</span>
+                                </div>
+                                <a href="" class="card-icon"><i class="fa-solid fa-bag-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <img src="img/rr-erica-thong-1.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between p-0">
+                            <span class="badge text-bg-dark rounded-0">Pre-Order</span>
+                            <div class="card-content px-4 py-3">
+                                <a href="" class="card-icon" ><i class="fa-regular fa-heart"></i></a>
+                                
+                                <div>
+                                    <span class="card-text card-product-name">Erika Thong</span>
+                                    <span class="card-text card-text-tag">$25.000 CLP</span>
+                                </div>
+                                <a href="" class="card-icon"><i class="fa-solid fa-bag-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <img src="img/rr-kelly-wrap-bra-1.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between p-0">
+                            <span class="badge text-bg-dark rounded-0">Pre-Order</span>
+                            <div class="card-content px-4 py-3">
+                                <a href="" class="card-icon" ><i class="fa-regular fa-heart"></i></a>
+                                
+                                <div>
+                                    <span class="card-text card-product-name">Kelly Wrap Flores</span>
+                                    <span class="card-text card-text-tag">$44.000 CLP</span>
+                                </div>
+                                <a href="" class="card-icon"><i class="fa-solid fa-bag-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <img src="img/rr-nicole-bra-1.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between p-0">
+                            <span class="badge text-bg-dark rounded-0">Pre-Order</span>
+                            <div class="card-content px-4 py-3">
+                                <a href="" class="card-icon" ><i class="fa-regular fa-heart"></i></a>
+                                
+                                <div>
+                                    <span class="card-text card-product-name">Nicole Bra Top</span>
+                                    <span class="card-text card-text-tag">$50.000 CLP</span>
+                                </div>
+                                <a href="" class="card-icon"><i class="fa-solid fa-bag-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <img src="img/rr-panties-tyler-1.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between p-0">
+                            <span class="badge text-bg-dark rounded-0">Pre-Order</span>
+                            <div class="card-content px-4 py-3">
+                                <a href="" class="card-icon" ><i class="fa-regular fa-heart"></i></a>
+                                
+                                <div>
+                                    <span class="card-text card-product-name">Panties Tyler Corazón</span>
+                                    <span class="card-text card-text-tag">$38.000 CLP</span>
+                                </div>
+                                <a href="" class="card-icon"><i class="fa-solid fa-bag-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <img src="img/rr-whitney-nightie-1.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between p-0">
+                            <span class="badge text-bg-dark rounded-0">Pre-Order</span>
+                            <div class="card-content px-4 py-3">
+                                <a href="" class="card-icon" ><i class="fa-regular fa-heart"></i></a>
+                                
+                                <div>
+                                    <span class="card-text card-product-name">Whitney Nightie</span>
+                                    <span class="card-text card-text-tag">$72.000 CLP</span>
+                                </div>
+                                <a href="" class="card-icon"><i class="fa-solid fa-bag-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+            </div>
+
+         </div>
+
+            
+
+        </div>
+
+    </section>
+
+    <section class="container" id="collections-a">
+
+        <div class="container mt-5 py-3 px-5" id="text-area-a">
+            <div class="title-a">
+                <h2>Colecciones</h2>
+            </div>
+            <div class="subtitle-a mt-1">
+                <h4></h4>
+            </div>
+        </div>
+
+        <div class="container mt-5 ">
+            <div class="row">
+                
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators d-none">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item c-item-2 active">
+                            <div class="row">
+
+                                <div class="col-lg-6 col-md-12">
+                                    <img src="img/heart-to-heart.png" class="d-block w-100" alt="..." style="filter: brightness(0.8);">
+                                    <div class="carousel-caption d-md-block d-lg-none">
+                                        <h3>Heart to Heart</h3>
+                                        <p class="d-none d-md-block">Donde la pasión y la elegancia se entrelazan en delicadas piezas de lencería. Cada conjunto de encaje con motivo de corazón es un tributo a la intimidad y la conexión emocional. Deja que tu corazón hable a través de tu estilo con esta colección única y sensual.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 bg-body-secondary p-5">
+                                    <div class="d-md-block p-5">
+                                        <h2>heart to heart</h2>
+                                        <p class="mt-3 fs-6 fw-light">Donde la pasión y la elegancia se entrelazan en delicadas piezas de lencería. Cada conjunto de encaje con motivo de corazón es un tributo a la intimidad y la conexión emocional. Deja que tu corazón hable a través de tu estilo con esta colección única y sensual.</p>
+                                        <button type="button" class="btn btn-outline-dark mt-5">Ver colección</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item c-item-2">
+
+                            <div class="row">
+
+                                <div class="col-lg-6 col-md-12">
+                                    <img src="img/after-dark.png" class="d-block w-100" alt="..." style="filter: brightness(0.8);">
+                                    <div class="carousel-caption d-md-block d-lg-none">
+                                        <h3>After Dark</h3>
+                                        <p class="d-none d-md-block">¿Estas lista para perderte en un mundo de flores? Cada pieza de lencería evoca un mundo de flores en la penumbra, creando una experiencia íntima única. Descubre la elegancia y el encanto de la noche con esta colección seductora.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 bg-dark text-light p-5">
+                                    <div class="d-lg-block d-md-none d-xs-none p-5">
+                                        <h2>After Dark</h2>
+                                        <p class="mt-3 fs-6 fw-light">¿Estas lista para perderte en un mundo de flores? Cada pieza de lencería evoca un mundo de flores en la penumbra, creando una experiencia íntima única. Descubre la elegancia y el encanto de la noche con esta colección seductora.</p>
+                                        <button type="button" class="btn btn-outline-light mt-5">Ver colección</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                        <div class="carousel-item c-item-2">
+                            <div class="row">
+
+                                <div class="col-lg-6 col-md-12">
+                                    <img src="img/garden-dreams.png" class="d-block w-100" alt="..." style="filter: brightness(0.8);">
+                                    <div class="carousel-caption d-md-block d-lg-none">
+                                        <h3>Garden Dreams</h3>
+                                        <p class="d-none d-md-block">Sumérgete en la serenidad de la naturaleza con esta colección. Creada con encaje inspirado en hojas y colores tranquilos como verde, aqua y blanco, estas piezas de lencería te envolverán en un sueño de jardín secreto. Deja que la belleza de la flora te inspire en cada momento íntimo.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 bg-success text-white p-5">
+                                    <div class="d-md-block p-5">
+                                        <h2>Garden Dreams</h2>
+                                        <p class="mt-3 fs-6 fw-light">Sumérgete en la serenidad de la naturaleza con esta colección. Creada con encaje inspirado en hojas y colores tranquilos como verde, aqua y blanco, estas piezas de lencería te envolverán en un sueño de jardín secreto. Deja que la belleza de la flora te inspire en cada momento íntimo.</p>
+                                        <button type="button" class="btn btn-outline-light mt-5">Ver colección</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="container" id="best-sellers-a">
+
+        <div class="container mt-5 py-3 px-5" id="text-area-a">
+            <div class="title-a">
+                <h2>Nuestro top 3</h2>
+            </div>
+            <div class="subtitle-a mt-1">
+                <h4>Más vendidos esta semana</h4>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="img/andy-crop-top-1.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between p-0">
+                            <span class="badge text-bg-dark rounded-0">N°1</span>
+                            <div class="card-content px-4 py-3">
+                                <a href="" class="card-icon" ><i class="fa-regular fa-heart"></i></a>
+                                
+                                <div>
+                                    <span class="card-text card-product-name">Andry Crop Top</span>
+                                    <span class="card-text card-text-tag">$38,000 CLP</span>
+                                </div>
+                                <a href="" class="card-icon"><i class="fa-solid fa-bag-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="img/bralette-bowie-1.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between p-0">
+                            <span class="badge text-bg-dark rounded-0">N°2</span>
+                            <div class="card-content px-4 py-3">
+                                <a href="" class="card-icon" ><i class="fa-regular fa-heart"></i></a>
+                                
+                                <div>
+                                    <span class="card-text card-product-name">Bralette Bowie</span>
+                                    <span class="card-text card-text-tag">$32.000 CLP</span>
+                                </div>
+                                <a href="" class="card-icon"><i class="fa-solid fa-bag-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="img/panties-kate-1.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between p-0">
+                            <span class="badge text-bg-dark rounded-0">N°3</span>
+                            <div class="card-content px-4 py-3">
+                                <a href="" class="card-icon" ><i class="fa-regular fa-heart"></i></a>
+                                
+                                <div>
+                                    <span class="card-text card-product-name">Panties Kate</span>
+                                    <span class="card-text card-text-tag">$24.000 CLP</span>
+                                </div>
+                                <a href="" class="card-icon"><i class="fa-solid fa-bag-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="container" id="reviews-a">
+
+        <div class="container mt-5 py-3 px-5" id="text-area-a">
+            <div class="title-a">
+                <h2>Escucha a nuestros clientes</h2>
+            </div>
+            <div class="subtitle-a mt-1">
+                <h4>"</h4>
+            </div>
+        </div>
+           
+        <div class="container mt-3 mb-5">
+
+            <div class="row">
+
+                <div class="swiper mySwiper">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="card border border-2 border-black border-opacity-50 p-4 reviews-item">
+                                <div class="review-content d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/bralette-paloma.png" alt="">
+                                    <div class="card-text">
+                                        <h6 class="name">María Rodríguez</h6>
+                                        <a href="" class="product">Compró: Bralette Paloma</a>
+                                    </div>
+                                </div>
+                                <p class="mt-2">Este bralette de encaje es simplemente elegante y cómodo. El encaje es suave al tacto y se siente increíble en la piel. Lo uso con todo, desde camisetas hasta vestidos, y siempre agrega un toque de sofisticación a mi atuendo.</p> 
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border border-2 border-black border-opacity-50 p-4 reviews-item">
+                                <div class="review-content d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/tanga-kyla.png" alt="">
+                                    <div class="card-text">
+                                        <h6 class="name">Laura García</h6>
+                                        <a class="product">Compró: Tanga Kyla</a>
+                                    </div>
+                                </div>
+                                <p class="mt-2">Esta tanga es un sueño hecho realidad. No deja marcas bajo la ropa y es tan suave que apenas la siento. Es perfecta para usar a diario y para ocasiones especiales.</p><br>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border border-2 border-black border-opacity-50 p-4 reviews-item">
+                                <div class="review-content d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/body-julia.png" alt="">
+                                    <div class="card-text">
+                                        <h6 class="name">Ana Martínez</h6>
+                                        <a class="product">Compró: Body Julia</a>
+                                    </div>
+                                </div>
+                                <p class="mt-2">¡Amé este body! La forma se ajusta perfectamente y realza mis curvas de manera natural. Me hace sentir segura y atractiva, ya sea bajo la ropa o solo.</p><br>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border border-2 border-black border-opacity-50 p-4 reviews-item">
+                                <div class="review-content d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/lara-pijama.jpg" alt="">
+                                    <div class="card-text">
+                                        <h6 class="name">Isabel Pérez</h6>
+                                        <a class="product">Compró: Pijama Lara</a>
+                                    </div>
+                                </div>
+                                <p class="mt-2">La tela es suave y fresca, perfecta para una noche de sueño reparador. Además, el diseño es tan elegante que me siento glamurosa incluso cuando duermo.</p><br>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border border-2 border-black border-opacity-50 p-4 reviews-item">
+                                <div class="review-content d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/dress.jpg" alt="">
+                                    <div class="card-text">
+                                        <h6 class="name">Luisa López</h6>
+                                        <a class="product">Compró: Vestido lencero Gia</a>
+                                    </div>
+                                </div>
+                                <p class="mt-2">Este vestido es increíblemente versátil! Puedo usarlo para una cena elegante o una noche en la ciudad. La tela es de super buena calidad, y siempre recibo elogios cuando lo llevo puesto.</p><br>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border border-2 border-black border-opacity-50 p-4 reviews-item">
+                                <div class="review-content d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/set-delilah.png" alt="">
+                                    <div class="card-text">
+                                        <h6 class="name">Elena Fernández</h6>
+                                        <a href="" class="product">Compró: Sotén + Tanga Delilah</a>
+                                    </div>
+                                </div>
+                                <p class="mt-2">Este conjunto de lencería de encaje es verdaderamente exquisito. Los detalles en el encaje son impresionantes, y me hace sentir increíblemente sexy y segura de mí misma.</p><br>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section id="contact_s" class="contact">
+
+        <div class="container-fluid">
+    
+            <div class="row g-0">
+    
+                <div class="col-sm-12 col-lg-6">
+        
+                    <div class="left">
+                        <h2>¡Gracias por tu mensaje!</h2>
+                    </div>
+        
+                </div>
+        
+                <div class="col-sm-12 col-lg-6 d-flex">
+        
+                    <div class="right d-flex align-items-center">
+            
+                        <div>
+            
+                            <div class="m-3">
+                                <h3 class="lh-base">Tu mensaje ha sido enviado correctamente</h3>
+                                <p class="mt-3 fs-6 fw-lighter">Nos estaremos contactando contigo en breve. Por favor sé paciente, el tiempo de respuesta puede ser hasta de 72 horas o 3 días hábiles.</p>
+                            </div>
+
+                            <div class="buttons mt-5">
+                                <a href="index.html" class="btn btn-secondary">Volver al inicio</a>
+                                <a href="index.html#contact" class="btn btn-outline-light">Enviar otro mensaje</a>
+                            </div>
+            
+                        </div>
+        
+                    </div>
+        
+                </div>
+    
+            </div>
+        </div>
+    
+    </section>
+
+    <footer class="container-fluid" id="footer-distribution-a">
+
+        <div class="row p-5 bg-dark text-white">
+
+            <div class="col-lg-6 mt-5">
+                <div class="footer-widget">
+                    <a class="footer-brand" href="index.html">
+                        <img src="img/logo-toru&naoko-light.png" alt="">
+                    </a>
+                    <p class="mt-3">Crafting confidence with care.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-lg-2 mt-md-5">
+                <div class="footer-widget">
+                    <h5 class="widget-title mb-2">Navegación</h5>
+                    <div class="footer_menu">
+                    <ul>
+                        <li><a href="shop.php">Productos</a></li>
+                        <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-4 col-lg-2 mt-md-5">
+                <div class="footer-widget">
+                    <h5 class="widget-title">Información</h5>
+                    <div class="footer_menu">
+                    <ul>
+                        <li><a href="#">Tabla de tallas</a></li>
+                        <li><a href="#">Sostenibilidad</a></li>
+                        <li><a href="#">Envíos &amp; devoluciones</a></li>
+                        <li><a href="#">Políticas de privacidad</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>  
+            
+            <div class="col-md-4 col-lg-2 mt-md-5">
+                <div class="footer-widget">
+                    <h5 class="widget-title">Redes Sociales</h5>
+                    <div class="footer-social mt-3">
+                        <a href="https://web.facebook.com/toruandnaoko/photos?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/toruandnaoko" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+        <div class="row footer-bottom">
+            <p>Proyecto para Contenidos y Creatividad III/Materiales y Procesos II - Albany Carrero y Lucia de Bernardi - Universidad de Palermo</p>
+        </div>
+
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!--Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!--Own JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

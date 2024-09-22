@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/e16411afed.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts - Nunito Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
+
+    <!-- Own styles -->
+    <link rel="stylesheet" href="css/styles.css">
+     
+</head>
+
+<body style="background-color: #151311;">
+
+    <header class="header container-fluid" id="header-a">
+    
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo-toru&naoko-light.png" alt="">
+                </a>
+        
+                <!-- Toggle btn -->
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- End Toggle btn -->
+        
+                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/logo-toru&naoko-light.png" alt="">
+                        </a>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+            
+                    <div class="offcanvas-body d-flex flex-column flex-lg-row p-2 p-lg-0">
+                        <ul class="navbar-nav justify-content-center align-items-center fs-6 flex-grow-1">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="shop.php">Productos</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="index.html#contact">Contacto</a>
+                            </li>
+                        </ul>
+            
+                        <div class="d-flex justify-content-center align-items-center gap-3">
+                            <ul class="nav-socials flex-row navbar-nav justify-content-center flex-grow-1 pe-3">
+                                <li class="nav-item mx-2"><a href="" target=""><i class="fa-solid fa-heart"></i></a></li>
+                                <li class="nav-item mx-2"><a href="" target=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+                                <li class="nav-item mx-2"><a href="login.html" target=""><i class="fa-solid fa-user"></i></a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+    
+        </nav>
+    
+    </header>
+
+
+    <section class="container d-flex justify-content-center align-items-center py-5">
+
+        <div class="position-relative bg-white rounded-3 w-100 border border-2 border-white rounded-3">
+
+            <form action="sign-up.php" method="POST" class="d-flex">
+
+                <div class="left-side rounded-start-3 p-5 d-none d-lg-block">
+
+                    <div class="text-white">
+                        <h3>Registro</h3>
+                    </div>
+                    <div class="steps-content text-white mt-4">
+                        <h5><span class="step-number"></span></h5>
+                    </div>
+                    <ul class="progress-bar">
+                        <li class="active">Datos Personales</li>
+                        <li>Direcciones</li>
+                        <li>Contraseña</li>
+                    </ul>
+                    
+                </div>
+
+                <div class="right-side bg-white rounded-3 w-100">
+
+                    <div class="main p-5 active">
+
+                        <div class="text-form mb-5">
+                            <h3>Datos Personales</h3>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md">
+                                <div class="form-group">
+                                    <label for="input-first-name" class="form-label">Nombre</label>
+                                    <input id="input-first-name" class="form-control" type="text" placeholder="Nombre" required require maxlength="30" name="user_name">
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="form-group">
+                                    <label for="input-last-name" class="form-label">Apellido</label>
+                                    <input id="input-last-name" class="form-control" type="text" placeholder="Apellido" required require maxlength="30" name="last_name">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="input-email" class="form-label">Correo Electrónico</label>
+                                    <input id="input-email" class="form-control" type="email" placeholder="ejemplo@mail.com" required require maxlength="100" name="email">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md">
+                                <div class="form-group ">
+                                <label for="input-tel" class="form-label">Teléfono</label>
+                                <input id="input-tel" class="form-control" type="phone" placeholder="Teléfono" required require maxlength="20" name="phone">
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="form-group ">
+                                    <label for="input-nacimiento" class="form-label">Cumpleaños</label>
+                                    <input id="input-nacimiento" class="form-control" type="date" placeholder="Cumpleaños" required require name="birth_date">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-5">
+                            <button class="next_button btn btn-dark">Siguiente</button>
+                        </div>
+                    </div>
+
+                    <div class="main p-5">
+
+                        <div class="text-form">
+                            <h3>Direcciones</h3>
+                        </div>
+
+                        <div class="text-form">
+                            <h6>Dirección Principal</h6>
+                        </div>
+
+                        <div class="row mb-3">
+
+                            <div class="col-md">
+                                <div class="form-group ">
+                                    <label for="input-country" class="form-label">País</label>
+                                    <select id="input-country" class="form-select" id="validationCustom04" required required name="country">
+                                        <option selected disabled value="">Elegir</option>
+                                        <option>Argentina</option>
+                                        <option>Chile</option>
+                                        <option>Uruguay</option>
+                                        <option>USA</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md">
+                                <div class="form-group ">
+                                    <label for="input-region" class="form-label">Región</label>
+                                    <input id="input-region" class="form-control" type="text" placeholder="Región" maxlength="100" required required name="region">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mb-3">
+
+                            <div class="col-md">
+                                <div class="form-group ">
+                                    <label for="input-comuna" class="form-label">Comuna</label>
+                                    <input id="input-comuna" class="form-control" type="text" placeholder="Comuna" maxlength="100" required required name="province">
+                                </div>
+                            </div>
+
+                            <div class="col-md">
+                                <div class="form-group ">
+                                    <label for="input-zip" class="form-label">Código Postal</label>
+                                    <input type="tel" id="input-zip" class="form-control" type="text" placeholder="Código Postal" required require maxlength="20" name="zip">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="input-address" class="form-label">Dirección</label>
+                                    <input id="input-address" class="form-control" type="text" placeholder="Calle y número de depto/casa" required require maxlength="200" name="address">
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="text-form">
+                            <h6>Dirección Secundaria</h6>
+                        </div>
+
+                        <div class="row mb-3">
+
+                            <div class="col-md">
+                                <div class="form-group">
+                                    <label for="input-country2" class="form-label">País</label>
+                                    <select id="input-country2" class="form-select" name="country_2">
+                                        <option selected disabled value="">Elegir</option>
+                                        <option>Argentina</option>
+                                        <option>Chile</option>
+                                        <option>Uruguay</option>
+                                        <option>USA</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md">
+                                <div class="form-group">
+                                    <label for="input-region2" class="form-label">Región</label>
+                                    <input id="input-region2" class="form-control" type="text" placeholder="Región" maxlength="100" name="region_2">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mb-3">
+
+                            <div class="col-md">
+                                <div class="form-group">
+                                    <label for="input-comuna2" class="form-label">Comuna</label>
+                                    <input id="input-comuna2" class="form-control" type="text" placeholder="Comuna" maxlength="100" name="province_2">
+                                </div>
+                            </div>
+
+                            <div class="col-md">
+                                <div class="form-group ">
+                                    <label for="input-zip2" class="form-label">Código Postal</label>
+                                    <input type="tel" id="input-zip2" class="form-control" type="text" placeholder="Código Postal" maxlength="20" name="zip_2" >
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="input-address2" class="form-label">Dirección</label>
+                                    <input id="input-address2" class="form-control" type="text" placeholder="Calle y número de depto/casa" maxlength="200" name="address_2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="buttons mt-5">
+                            <button class="back_button btn btn-outline-dark">Regresar</button>
+                            <button class="next_button btn btn-dark">Siguiente</button>
+                        </div>
+
+                    </div>
+
+                    <div class="main p-5">
+
+                        <div class="text-form">
+                            <h3>Contraseña</h3>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="input-password" class="form-label">Contraseña</label>
+                                    <input id="input-password" class="form-control" type="password" placeholder="Contraseña" required require maxlength="20" name="password">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="buttons mt-5">
+                            <button class="back_button btn btn-outline-dark">Regresar</button>
+                            <input type="submit" value="Crear cuenta" class="next_button btn btn-dark"></input>
+                        </div>
+                    </div>
+    
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="container-fluid mt-5" id="footer-distribution-a">
+
+        <div class="row p-5 bg-dark text-white">
+
+            <div class="col-lg-6 mt-5">
+                <div class="footer-widget">
+                    <a class="footer-brand" href="index.html">
+                        <img src="img/logo-toru&naoko-light.png" alt="">
+                    </a>
+                    <p class="mt-3">Crafting confidence with care.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-lg-2 mt-md-5">
+                <div class="footer-widget">
+                    <h5 class="widget-title mb-2">Navegación</h5>
+                    <div class="footer_menu">
+                    <ul>
+                        <li><a href="shop.php">Productos</a></li>
+                        <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="index.html#contact">Contacto</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-4 col-lg-2 mt-md-5">
+                <div class="footer-widget">
+                    <h5 class="widget-title">Información</h5>
+                    <div class="footer_menu">
+                    <ul>
+                        <li><a href="#">Tabla de tallas</a></li>
+                        <li><a href="#">Sostenibilidad</a></li>
+                        <li><a href="#">Envíos &amp; devoluciones</a></li>
+                        <li><a href="#">Políticas de privacidad</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>  
+            
+            <div class="col-md-4 col-lg-2 mt-md-5">
+                <div class="footer-widget">
+                    <h5 class="widget-title">Redes Sociales</h5>
+                    <div class="footer-social mt-3">
+                        <a href="https://web.facebook.com/toruandnaoko/photos?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/toruandnaoko" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+        <div class="row footer-bottom">
+            <p>Proyecto para Contenidos y Creatividad III/Materiales y Procesos II - Albany Carrero y Lucia de Bernardi - Universidad de Palermo</p>
+        </div>
+
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!--Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!--Own JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar sesión</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/e16411afed.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts - Nunito Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
+
+    <!-- Own styles -->
+    <link rel="stylesheet" href="css/styles.css">
+     
+</head>
+
+<body style="background-color: #151311;">
+
+    <header class="header container-fluid" id="header-a">
+    
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo-toru&naoko-light.png" alt="">
+                </a>
+        
+                <!-- Toggle btn -->
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- End Toggle btn -->
+        
+                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/logo-toru&naoko-light.png" alt="">
+                        </a>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+            
+                    <div class="offcanvas-body d-flex flex-column flex-lg-row p-2 p-lg-0">
+                        <ul class="navbar-nav justify-content-center align-items-center fs-6 flex-grow-1">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="shop.php">Productos</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="index.html#contact">Contacto</a>
+                            </li>
+                        </ul>
+            
+                        <div class="d-flex justify-content-center align-items-center gap-3">
+                            <ul class="nav-socials flex-row navbar-nav justify-content-center flex-grow-1 pe-3">
+                                <li class="nav-item mx-2"><a href="" target=""><i class="fa-solid fa-heart"></i></a></li>
+                                <li class="nav-item mx-2"><a href="" target=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+                                <li class="nav-item mx-2"><a href="login.html" target=""><i class="fa-solid fa-user"></i></a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+    
+        </nav>
+    
+    </header>
+
+
+    <section>
+
+        <div class="container py-5 d-flex justify-content-center align-items-center">
+                
+            <div class="row g-0">
+                <div class="col-md-6 col-lg-5 d-none d-md-block log-in">
+                    <video src="video/retro-1.mp4" autoplay="true" muted="true" loop="true" class="l-img rounded-start-3"></video>
+                </div>
+                <div class="col-md-6 col-lg-7 d-flex align-items-center rounded-end-3 log-in" style="background-color: #fcfcfb;">
+            
+                    <form class="p-4 p-lg-5 text-black w-100">
+                   
+                        <h2 class="mb-4">¡Hola, otra vez!</h2>
+                                
+                        <div class="form-group mb-4">
+                            <label for="input-email" class="form-label">Correo Electrónico</label>
+                            <input id="input-email" class="form-control" type="email" placeholder="ejemplo@mail.com" required require>
+                        </div>
+                
+                        <div class="form-group mb-4">
+                            <label for="input-password" class="form-label">Contraseña</label>
+                            <input id="input-password" class="form-control" type="password" placeholder="Contraseña" required>
+                        </div>
+                
+                        <div class="pt-1 mb-3">
+                            <input type="submit" value="Iniciar sesión" class="next_button btn btn-dark"></input>
+                        </div>
+                
+                        <a class="small text-muted text-decoration-none" href="#!">¿Olvideste tu contraseña?</a>
+                        <p class="mb-5 pb-lg-2 mt-4 fw-medium text-secondary">¿No tienes una cuenta? <a href="sign-up.html" class="text-dark">Registrate aquí</a></p>
+                        <a href="#!" class="small text-muted text-decoration-none">Politicas de Privacidad</a>
+                    </form>
+            
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+    <footer class="container-fluid mt-5" id="footer-distribution-a">
+
+        <div class="row p-5 bg-black text-white">
+
+            <div class="col-lg-6 mt-5">
+                <div class="footer-widget">
+                    <a class="footer-brand" href="index.html">
+                        <img src="img/logo-toru&naoko-light.png" alt="">
+                    </a>
+                    <p class="mt-3">Crafting confidence with care.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-lg-2 mt-md-5">
+                <div class="footer-widget">
+                    <h5 class="widget-title mb-2">Navegación</h5>
+                    <div class="footer_menu">
+                    <ul>
+                        <li><a href="shop.php">Productos</a></li>
+                        <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="index.html#contact">Contacto</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-4 col-lg-2 mt-md-5">
+                <div class="footer-widget">
+                    <h5 class="widget-title">Información</h5>
+                    <div class="footer_menu">
+                    <ul>
+                        <li><a href="#">Tabla de tallas</a></li>
+                        <li><a href="#">Sostenibilidad</a></li>
+                        <li><a href="#">Envíos &amp; devoluciones</a></li>
+                        <li><a href="#">Políticas de privacidad</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>  
+            
+            <div class="col-md-4 col-lg-2 mt-md-5">
+                <div class="footer-widget">
+                    <h5 class="widget-title">Redes Sociales</h5>
+                    <div class="footer-social mt-3">
+                        <a href="https://web.facebook.com/toruandnaoko/photos?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/toruandnaoko" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+        <div class="row footer-bottom">
+            <p>Proyecto para Contenidos y Creatividad III/Materiales y Procesos II - Albany Carrero y Lucia de Bernardi - Universidad de Palermo</p>
+        </div>
+
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!--Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!--Own JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
